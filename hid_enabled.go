@@ -9,9 +9,9 @@
 package hid
 
 /*
-#cgo CFLAGS: -I./hidapi/hidapi
+#cgo CFLAGS: -I${SRCDIR}/hidapi/hidapi
 
-#cgo linux CFLAGS: -I./libusb/libusb -DDEFAULT_VISIBILITY="" -DOS_LINUX -D_GNU_SOURCE -DPOLL_NFDS_TYPE=int
+#cgo linux CFLAGS: -I${SRCDIR}/libusb/libusb -DDEFAULT_VISIBILITY="" -DOS_LINUX -D_GNU_SOURCE -DPOLL_NFDS_TYPE=int
 #cgo linux,!android LDFLAGS: -lrt
 #cgo darwin CFLAGS: -DOS_DARWIN
 #cgo darwin LDFLAGS: -framework CoreFoundation -framework IOKit
